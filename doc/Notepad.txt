@@ -1,0 +1,8 @@
+In the solution root:
+
+dotnet ef migrations add <MigrationName> --project ./src/infrastructure/FilmCatalog.Data --startup-project ./src/presentation/FilmCatalog.WebApi/
+
+dotnet ef database update --project ./src/infrastructure/FilmCatalog.Data --startup-project ./src/presentation/FilmCatalog.WebApi/
+
+
+

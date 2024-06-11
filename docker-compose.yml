@@ -1,0 +1,15 @@
+version: '3.4'
+name: filmcatalog
+services:
+  postgres:
+    image: postgres
+    environment:
+      - POSTGRES_USER=filmcatalog
+      - POSTGRES_PASSWORD=filmcatalog
+      - POSTGRES_DB=filmcatalog
+    volumes:
+      - filmcatalogpgsqldata:/var/lib/postgresql/data
+    ports:
+       - 5432:5432
+volumes:
+  filmcatalogpgsqldata:
